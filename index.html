@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Scripts for the Web</title>
+	</head>
+<style>
+html, body { height: 100%; margin: 0; padding; 0; }
+div#plusNminusOne {  
+	height: 100%; width: 100%; 
+	position: relative; 
+}
+#cwrap, #cui { 
+	height: 100%; width: 100%;
+	position: absolute; 
+	top: 0; left: 0;
+}
+#cwrap { background: #f3f; z-index: 25; }
+#cui { background: none; z-index: 75; }
+#tl, #tr, #bl, #br, #center { 
+	position: absolute; 
+} 
+#tl { top: 0; left: 0; }
+#tr { top: 0; right: 0; }
+#br { bottom: 0; right: 0; }
+#bl { bottom: 0; left: 0; }
+#center { 
+	z-index: 50;
+	top:50%;left:50%;
+	transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+}
+#scrolledPage { 
+	width: 100%; margin: 0; 
+	padding: 10px; 
+	background: #a00;
+} 
+
+</style>
+<body>
+	<div id="plusNminusOne">
+		<div id="cwrap">
+			<canvas width=400 height=400> canvas </canvas>
+		</div>
+
+		<div id="cui">
+			<div id="tl">top left</div>
+			<div id="tr">top right</div>
+			<div id="bl">bottom left</div>
+			<div id="br">bottom right</div>
+			<div id="center">center</div>
+		</div>
+	</div>
+
+	<div id="scrolledPage">
+	scrolledPage
+	</div>
